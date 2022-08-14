@@ -11,6 +11,13 @@ zstyle :compinstall filename '/home/aurora/.zshrc'
 
 PROMPT='%B%F{99}%2d$~%f%b %# '
 
+# Ctrl and L-arrow/R-arrow
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
+# Ctrl and Delete/Backspace
+bindkey '^H' backward-kill-word
+bindkey -M emacs '^[[3;5~' kill-word
 
 autoload -Uz compinit
 compinit
