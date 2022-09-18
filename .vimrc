@@ -7,5 +7,12 @@ set backspace=indent,eol,start
 
 colorscheme sublimemonokai_modified
 
+" turn off flashing and error sound
+set visualbell 
+set t_vb=
+
+" Cursor wraparound
+set whichwrap+=<,>,h,l,[,]
+
 " don't display .swp files
 let g:netrw_list_hide= '.*\.swp$,.*\.DS_Store'
